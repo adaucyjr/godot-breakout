@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ball/Ball.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 16.0
+
+[node name="Ball" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 1, 0.4, 0.333333, 1 )
+polygon = PoolVector2Array( -0.183357, -16.1247, -4.125, -15.5, -8.125, -13.8125, -11.3125, -11.3125, -13.875, -7.875, -15.4375, -4.375, -15.9375, 0, -15.4375, 4.0625, -13.9375, 7.875, -11.375, 11.3125, -8.0625, 13.8125, -4.3125, 15.4375, 0.0625, 16, 4.0625, 15.5, 8.0625, 13.75, 11.25, 11.4375, 13.8125, 8, 15.5, 4, 16.0625, 0.0625, 15.5625, -3.875, 13.875, -8.125, 11.5, -11.125, 8.1875, -13.8125, 4.5, -15.3125 )
